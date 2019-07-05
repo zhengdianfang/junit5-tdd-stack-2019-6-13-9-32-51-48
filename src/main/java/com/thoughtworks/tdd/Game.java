@@ -2,6 +2,13 @@ package com.thoughtworks.tdd;
 
 public class Game {
 
+    public static void main(String[] args) {
+        Game game = new Game();
+        for (int i = 0; i < 100; i++) {
+            System.out.println(game.fizzBuzz(i));
+        }
+    }
+
     public String fizzBuzz(int number) {
         StringBuffer result = new StringBuffer();
         result.append(translateThreeMultiple(number));
